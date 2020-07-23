@@ -52,8 +52,6 @@ struct BookFlightView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
             }
-
-            
         }
         .offset(y: 35)
     }

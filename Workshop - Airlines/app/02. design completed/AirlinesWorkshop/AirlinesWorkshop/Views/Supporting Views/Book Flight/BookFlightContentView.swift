@@ -35,16 +35,16 @@ struct BookFlightContentView: View {
             // Destination/Arrival Buttons
             ZStack {
                 LazyVStack(spacing: 20) {
-                    DestinationButton(action: {})
+                    DestinationButton(action: { self.isPresented = true })
                         .padding(.horizontal, 10)
                         .sheet(isPresented: $isPresented) {
-                            LocationSelectionView()
+                            LocationSelectionView(isPresented: $isPresented)
                         }
 
-                    ArrivalButton(action: {})
+                    ArrivalButton(action: { self.isPresented = true })
                         .padding(.horizontal, 10)
                         .sheet(isPresented: $isPresented) {
-                            LocationSelectionView()
+                            LocationSelectionView(isPresented: $isPresented)
                         }
                 }
                 .padding(.top, 10)
@@ -66,12 +66,14 @@ struct BookFlightContentView: View {
                 HStack {
                     DateButton(title: "DEPARTURE",
                                date: "99 Jun, 2020") {
+                        self.model.isDatePickerVisible.toggle()
                     }
 
                     Spacer()
 
                     DateButton(title: "ARRIVAL",
                                date:"99 Jun, 2020") {
+                        self.model.isDatePickerVisible.toggle()
                     }
                 }
                 .padding(.top, 20)

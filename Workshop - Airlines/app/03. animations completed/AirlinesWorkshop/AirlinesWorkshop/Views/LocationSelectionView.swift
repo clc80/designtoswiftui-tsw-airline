@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct LocationSelectionView: View {
+    @Binding var isPresented: Bool
+    
     var items = [
         LocationItem.defaultArrivalLocation,
         LocationItem.defaultDepartureLocation
@@ -30,6 +32,7 @@ struct LocationSelectionView: View {
             }
             .navigationBarTitle(Text("Locations"), displayMode: .inline)
             .navigationBarItems(trailing: Button(action:{
+                self.isPresented = false
             }){
                 Text("Done")
             })
@@ -40,7 +43,7 @@ struct LocationSelectionView: View {
 
 struct LocationListView_Previews: PreviewProvider {
     static var previews: some View {
-        LocationSelectionView()
+        LocationSelectionView(isPresented: .constant(false))
     }
 }
 

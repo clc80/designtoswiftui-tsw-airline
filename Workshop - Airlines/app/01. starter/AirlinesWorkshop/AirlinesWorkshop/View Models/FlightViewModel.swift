@@ -10,7 +10,7 @@ import Foundation
 
 class FlightViewModel: ObservableObject {
     @Published var tempInt = 1
-    
+    @Published var isDatePickerVisible = false
     
     static func dates() -> [DateItem] {
         var dateItems: [DateItem] = []

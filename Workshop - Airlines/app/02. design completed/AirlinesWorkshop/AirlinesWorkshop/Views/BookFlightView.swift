@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct BookFlightView: View {
+    @EnvironmentObject var model: FlightViewModel
+    @State private var isShowingDetailView = false
+    @State private var isPresented = false
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             container
+            if model.isDatePickerVisible {
+                LazyView(CustomDatePicker())
+            }
         }
         .background(Color(.baseWhite).edgesIgnoringSafeArea(.all))
     }
@@ -20,7 +27,7 @@ struct BookFlightView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack {
                     BookFlightHeaderView()
-                    BookFlightContentView(isPresented: .constant(false))
+                    BookFlightContentView(isPresented: $isPresented)
                 }
                 .padding(.bottom, 80)
             }
@@ -38,9 +45,9 @@ struct BookFlightView: View {
                 .frame(height: 114)
                 .cornerRadius(10, corners: [.topLeft, .topRight])
 
-            
-            NavigationLink(destination: LazyView(ChooseFlightView()), isActive: .constant(false)) {
+            NavigationLink(destination: LazyView(ChooseFlightView()), isActive: $isShowingDetailView) {
                 FooterButton(title: "SEARCH FLIGHTS") {
+                    self.isShowingDetailView = true
                 }
                 .buttonStyle(PlainButtonStyle())
             }

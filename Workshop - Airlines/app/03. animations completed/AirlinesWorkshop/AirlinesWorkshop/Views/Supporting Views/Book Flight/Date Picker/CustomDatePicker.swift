@@ -10,9 +10,8 @@ import SwiftUI
 
 
 struct CustomDatePicker: View {
-    
-    @EnvironmentObject var model: FlightViewModel
     @Namespace private var namespace
+    @EnvironmentObject var model: FlightViewModel
     @State private var selectedItemID: String?
     @State private var topmostItemID: String?
     
@@ -39,7 +38,17 @@ struct CustomDatePicker: View {
                     .padding(.horizontal, 10)
                     
                     ScrollView(.horizontal, showsIndicators: false) {
-                        Text("Add Code here")
+                        LazyHStack(spacing: 0) {
+                           ForEach(self.model.dates.indices) { index in
+                               let presenting = selectedItemID == self.model.dates[index].id
+                               
+                               Button(action: { select(item: self.model.dates[index]) }) {
+                                   CalendarItem(namespace: namespace, data: self.model.dates[index])
+                               }
+                               .buttonStyle(PlainButtonStyle())
+                               .opacity(!presenting ? 1 : 0)
+                           }
+                       }
                     }.frame(height: 210)
                     
                 }
@@ -48,14 +57,14 @@ struct CustomDatePicker: View {
                 .cornerRadius(10)
                 .padding(5)
                 
-                Button(action: {  }) {
+                Button(action: { model.isDatePickerVisible.toggle() }) {
                     Image(systemName: "x.circle.fill").font(Font.system(size: 24).bold())
                 }
                 .offset(x: -15, y: 15)
                 .foregroundColor(.black)
             }
             
-            ForEach(0...14, id: \.self) { index in
+            ForEach(model.dates.indices, id: \.self) { index in
                 let presenting = selectedItemID == self.model.dates[index].id
                 CalendarSelectedItem(data: self.model.dates[index], closeAction: deselect, namespace: namespace)
                     .opacity(presenting ? 1 : 0)

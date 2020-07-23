@@ -36,7 +36,7 @@ struct ChooseFlightView: View {
                     }.buttonStyle(PlainButtonStyle())
                     
                 }
-            }.padding(.top, 250)
+            }.padding(.top, 205)
             .padding(.bottom, 40)
         }
     }

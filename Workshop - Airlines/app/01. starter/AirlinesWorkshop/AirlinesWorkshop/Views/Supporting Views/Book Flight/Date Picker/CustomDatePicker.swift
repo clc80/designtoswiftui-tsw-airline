@@ -11,6 +11,8 @@ import SwiftUI
 
 struct CustomDatePicker: View {
     
+    @EnvironmentObject var model: FlightViewModel
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -43,7 +45,7 @@ struct CustomDatePicker: View {
                 .cornerRadius(10)
                 .padding(5)
                 
-                Button(action: {  }) {
+                Button(action: { model.isDatePickerVisible.toggle() }) {
                     Image(systemName: "x.circle.fill").font(Font.system(size: 24).bold())
                 }
                 .offset(x: -15, y: 15)

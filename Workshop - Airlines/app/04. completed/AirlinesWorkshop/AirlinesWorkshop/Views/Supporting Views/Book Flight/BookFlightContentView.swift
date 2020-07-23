@@ -72,19 +72,19 @@ struct BookFlightContentView: View {
 
             VStack {
                 HStack {
-                    DateButton(title: "DEPARTURE",
-                               date: model.departureDate.displayDate.isEmpty ? model.todaysDate : model.departureDate.displayDate) {
-                        self.model.isSettingArrivalDate = false
-                        self.model.isDatePickerVisible.toggle()
-                    }
+                DateButton(title: "DEPARTURE",
+                           date: model.departureDate.displayDate.isEmpty ? model.todaysDate : model.departureDate.displayDate) {
+                    self.model.isSettingArrivalDate = false
+                    self.model.isDatePickerVisible.toggle()
+                }
 
-                    Spacer()
+                Spacer()
 
-                    DateButton(title: "ARRIVAL",
-                               date: model.arrivalDate.displayDate.isEmpty ? model.todaysDate : model.arrivalDate.displayDate) {
-                        self.model.isSettingArrivalDate = true
-                        self.model.isDatePickerVisible.toggle()
-                    }
+                DateButton(title: "ARRIVAL",
+                           date: model.arrivalDate.displayDate.isEmpty ? model.todaysDate : model.arrivalDate.displayDate) {
+                    self.model.isSettingArrivalDate = true
+                    self.model.isDatePickerVisible.toggle()
+                }
                 }
                 .padding(.top, 20)
                 .padding(.horizontal, 10)

@@ -37,7 +37,7 @@ struct ChooseFlightView: View {
                     }.buttonStyle(PlainButtonStyle())
                     
                 }
-            }.padding(.top, 250)
+            }.padding(.top, 205)
             .padding(.bottom, 40)
         }
     }
@@ -45,6 +45,8 @@ struct ChooseFlightView: View {
 
 struct ChooseFlightView_Previews: PreviewProvider {
     static var previews: some View {
-        ChooseFlightView()
+        NavigationView {
+            ChooseFlightView()
+        }
     }
 }

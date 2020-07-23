@@ -35,7 +35,6 @@ struct ChooseFlightView: View {
                     NavigationLink(destination: LazyView(SeatSelectionView().environmentObject(model))) {
                         TicketRow().environmentObject(model)
                     }.buttonStyle(PlainButtonStyle())
-                    
                 }
             }.padding(.top, 250)
             .padding(.bottom, 40)

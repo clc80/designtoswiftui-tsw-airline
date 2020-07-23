@@ -29,7 +29,6 @@ struct SeatInfoView: View {
 }
 
 struct SeatInfoView_Previews: PreviewProvider {
-    
     static var previews: some View {
         SeatInfoView()
     }

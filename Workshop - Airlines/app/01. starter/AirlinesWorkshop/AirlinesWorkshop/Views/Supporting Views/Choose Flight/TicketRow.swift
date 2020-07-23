@@ -10,11 +10,8 @@ import SwiftUI
 struct TicketRow: View {
     
     var body: some View {
-       Text("Ticket Row")
+        Text("Ticket Row")
                     .custom(font: .medium, size: 12)
-            }
-            .foregroundColor(.baseDarkBlue)
-        }
     }
     
     var line: some View {

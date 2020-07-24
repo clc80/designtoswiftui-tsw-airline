@@ -15,16 +15,17 @@ struct ChooseFlightHeaderView: View {
         ZStack {
             Rectangle()
                 .fill(Color.baseDarkBlue)
-                .frame(height: 200)
+                .frame(height: 250)
                 .cornerRadius(27, corners: [.bottomLeft, .bottomRight])
                 .offset(y: -300)
             
             FlightPathView()
                 .frame(height: 100)
-                .offset(y: -350)
+                .offset(y: -315)
+            
             content
                 .frame(height: 200)
-                .offset(y: -250)
+                .offset(y: -200)
             
         }.navigationBarTitle("", displayMode: .inline)
     }
@@ -49,7 +50,7 @@ struct ChooseFlightHeaderView: View {
                             .custom(font: .regular, size: 14)
                     }
                 }
-                .offset(y: -10)
+                .offset(y: 0)
                 .padding(.horizontal, 80)
                 .foregroundColor(.white)
                 

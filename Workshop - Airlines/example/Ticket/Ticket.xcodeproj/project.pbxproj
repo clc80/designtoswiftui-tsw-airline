@@ -1,0 +1,413 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		46DAC7B324CB13C100287CDE /* TicketApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7B224CB13C100287CDE /* TicketApp.swift */; };
+		46DAC7B524CB13C100287CDE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7B424CB13C100287CDE /* ContentView.swift */; };
+		46DAC7B724CB13C200287CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DAC7B624CB13C200287CDE /* Assets.xcassets */; };
+		46DAC7BA24CB13C200287CDE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46DAC7B924CB13C200287CDE /* Preview Assets.xcassets */; };
+		46DAC7C324CB13D000287CDE /* TicketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7C124CB13CF00287CDE /* TicketRow.swift */; };
+		46DAC7C424CB13D000287CDE /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7C224CB13D000287CDE /* IndicatorView.swift */; };
+		46DAC7D424CB141900287CDE /* VibrancyBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7C624CB141900287CDE /* VibrancyBackground.swift */; };
+		46DAC7D524CB141900287CDE /* EdgeBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7C724CB141900287CDE /* EdgeBorder.swift */; };
+		46DAC7D624CB141900287CDE /* ScaledFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7C924CB141900287CDE /* ScaledFont.swift */; };
+		46DAC7D724CB141900287CDE /* RoundedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7CA24CB141900287CDE /* RoundedView.swift */; };
+		46DAC7D824CB141900287CDE /* StringOptional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7CB24CB141900287CDE /* StringOptional+Extension.swift */; };
+		46DAC7D924CB141900287CDE /* NavigationBar+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7CC24CB141900287CDE /* NavigationBar+Extension.swift */; };
+		46DAC7DA24CB141900287CDE /* Palette+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7CD24CB141900287CDE /* Palette+Color.swift */; };
+		46DAC7DB24CB141900287CDE /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7CE24CB141900287CDE /* View+Extension.swift */; };
+		46DAC7DC24CB141900287CDE /* FooterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7CF24CB141900287CDE /* FooterButton.swift */; };
+		46DAC7DD24CB141900287CDE /* AppButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7D124CB141900287CDE /* AppButtonStyle.swift */; };
+		46DAC7DE24CB141900287CDE /* DateButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7D224CB141900287CDE /* DateButtonStyle.swift */; };
+		46DAC7DF24CB141900287CDE /* SeatToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46DAC7D324CB141900287CDE /* SeatToggleStyle.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		46DAC7AF24CB13C100287CDE /* Ticket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ticket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DAC7B224CB13C100287CDE /* TicketApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketApp.swift; sourceTree = "<group>"; };
+		46DAC7B424CB13C100287CDE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		46DAC7B624CB13C200287CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		46DAC7B924CB13C200287CDE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		46DAC7BB24CB13C200287CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46DAC7C124CB13CF00287CDE /* TicketRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketRow.swift; sourceTree = "<group>"; };
+		46DAC7C224CB13D000287CDE /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
+		46DAC7C624CB141900287CDE /* VibrancyBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VibrancyBackground.swift; sourceTree = "<group>"; };
+		46DAC7C724CB141900287CDE /* EdgeBorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EdgeBorder.swift; sourceTree = "<group>"; };
+		46DAC7C924CB141900287CDE /* ScaledFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScaledFont.swift; sourceTree = "<group>"; };
+		46DAC7CA24CB141900287CDE /* RoundedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedView.swift; sourceTree = "<group>"; };
+		46DAC7CB24CB141900287CDE /* StringOptional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StringOptional+Extension.swift"; sourceTree = "<group>"; };
+		46DAC7CC24CB141900287CDE /* NavigationBar+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavigationBar+Extension.swift"; sourceTree = "<group>"; };
+		46DAC7CD24CB141900287CDE /* Palette+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Palette+Color.swift"; sourceTree = "<group>"; };
+		46DAC7CE24CB141900287CDE /* View+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		46DAC7CF24CB141900287CDE /* FooterButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FooterButton.swift; sourceTree = "<group>"; };
+		46DAC7D124CB141900287CDE /* AppButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppButtonStyle.swift; sourceTree = "<group>"; };
+		46DAC7D224CB141900287CDE /* DateButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateButtonStyle.swift; sourceTree = "<group>"; };
+		46DAC7D324CB141900287CDE /* SeatToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SeatToggleStyle.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46DAC7AC24CB13C100287CDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46DAC7A624CB13C100287CDE = {
+			isa = PBXGroup;
+			children = (
+				46DAC7B124CB13C100287CDE /* Ticket */,
+				46DAC7B024CB13C100287CDE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		46DAC7B024CB13C100287CDE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46DAC7AF24CB13C100287CDE /* Ticket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46DAC7B124CB13C100287CDE /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				46DAC7C524CB141900287CDE /* Helpers */,
+				46DAC7B224CB13C100287CDE /* TicketApp.swift */,
+				46DAC7B424CB13C100287CDE /* ContentView.swift */,
+				46DAC7C224CB13D000287CDE /* IndicatorView.swift */,
+				46DAC7C124CB13CF00287CDE /* TicketRow.swift */,
+				46DAC7B624CB13C200287CDE /* Assets.xcassets */,
+				46DAC7BB24CB13C200287CDE /* Info.plist */,
+				46DAC7B824CB13C200287CDE /* Preview Content */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		46DAC7B824CB13C200287CDE /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				46DAC7B924CB13C200287CDE /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		46DAC7C524CB141900287CDE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				46DAC7C624CB141900287CDE /* VibrancyBackground.swift */,
+				46DAC7C724CB141900287CDE /* EdgeBorder.swift */,
+				46DAC7C824CB141900287CDE /* Extensions */,
+				46DAC7CF24CB141900287CDE /* FooterButton.swift */,
+				46DAC7D024CB141900287CDE /* Button Style */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		46DAC7C824CB141900287CDE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				46DAC7C924CB141900287CDE /* ScaledFont.swift */,
+				46DAC7CA24CB141900287CDE /* RoundedView.swift */,
+				46DAC7CB24CB141900287CDE /* StringOptional+Extension.swift */,
+				46DAC7CC24CB141900287CDE /* NavigationBar+Extension.swift */,
+				46DAC7CD24CB141900287CDE /* Palette+Color.swift */,
+				46DAC7CE24CB141900287CDE /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		46DAC7D024CB141900287CDE /* Button Style */ = {
+			isa = PBXGroup;
+			children = (
+				46DAC7D124CB141900287CDE /* AppButtonStyle.swift */,
+				46DAC7D224CB141900287CDE /* DateButtonStyle.swift */,
+				46DAC7D324CB141900287CDE /* SeatToggleStyle.swift */,
+			);
+			path = "Button Style";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		46DAC7AE24CB13C100287CDE /* Ticket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46DAC7BE24CB13C200287CDE /* Build configuration list for PBXNativeTarget "Ticket" */;
+			buildPhases = (
+				46DAC7AB24CB13C100287CDE /* Sources */,
+				46DAC7AC24CB13C100287CDE /* Frameworks */,
+				46DAC7AD24CB13C100287CDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ticket;
+			productName = Ticket;
+			productReference = 46DAC7AF24CB13C100287CDE /* Ticket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46DAC7A724CB13C100287CDE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					46DAC7AE24CB13C100287CDE = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 46DAC7AA24CB13C100287CDE /* Build configuration list for PBXProject "Ticket" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 46DAC7A624CB13C100287CDE;
+			productRefGroup = 46DAC7B024CB13C100287CDE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46DAC7AE24CB13C100287CDE /* Ticket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46DAC7AD24CB13C100287CDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DAC7BA24CB13C200287CDE /* Preview Assets.xcassets in Resources */,
+				46DAC7B724CB13C200287CDE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46DAC7AB24CB13C100287CDE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DAC7DF24CB141900287CDE /* SeatToggleStyle.swift in Sources */,
+				46DAC7DC24CB141900287CDE /* FooterButton.swift in Sources */,
+				46DAC7DD24CB141900287CDE /* AppButtonStyle.swift in Sources */,
+				46DAC7D724CB141900287CDE /* RoundedView.swift in Sources */,
+				46DAC7D824CB141900287CDE /* StringOptional+Extension.swift in Sources */,
+				46DAC7B524CB13C100287CDE /* ContentView.swift in Sources */,
+				46DAC7B324CB13C100287CDE /* TicketApp.swift in Sources */,
+				46DAC7DE24CB141900287CDE /* DateButtonStyle.swift in Sources */,
+				46DAC7D424CB141900287CDE /* VibrancyBackground.swift in Sources */,
+				46DAC7C424CB13D000287CDE /* IndicatorView.swift in Sources */,
+				46DAC7D524CB141900287CDE /* EdgeBorder.swift in Sources */,
+				46DAC7D924CB141900287CDE /* NavigationBar+Extension.swift in Sources */,
+				46DAC7DA24CB141900287CDE /* Palette+Color.swift in Sources */,
+				46DAC7C324CB13D000287CDE /* TicketRow.swift in Sources */,
+				46DAC7DB24CB141900287CDE /* View+Extension.swift in Sources */,
+				46DAC7D624CB141900287CDE /* ScaledFont.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		46DAC7BC24CB13C200287CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		46DAC7BD24CB13C200287CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		46DAC7BF24CB13C200287CDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ticket/Preview Content\"";
+				DEVELOPMENT_TEAM = BCKVL9BZPW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ticket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.cocoa.Ticket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46DAC7C024CB13C200287CDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Ticket/Preview Content\"";
+				DEVELOPMENT_TEAM = BCKVL9BZPW;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Ticket/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = academy.cocoa.Ticket;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46DAC7AA24CB13C100287CDE /* Build configuration list for PBXProject "Ticket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DAC7BC24CB13C200287CDE /* Debug */,
+				46DAC7BD24CB13C200287CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46DAC7BE24CB13C200287CDE /* Build configuration list for PBXNativeTarget "Ticket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DAC7BF24CB13C200287CDE /* Debug */,
+				46DAC7C024CB13C200287CDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46DAC7A724CB13C100287CDE /* Project object */;
+}

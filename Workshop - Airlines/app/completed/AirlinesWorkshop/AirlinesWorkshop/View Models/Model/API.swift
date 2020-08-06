@@ -27,8 +27,6 @@ struct API {
     enum EndPoint {
         static let baseURL = URL(string: "http://127.0.0.1:3000/")!
 
-
-
         static func request(with url: URL) -> URLRequest {
             var request = URLRequest(url: url)
             request.httpMethod = "GET"
